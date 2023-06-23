@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		EE20EEB12A4615BF00EA4A41 /* InspectorExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEB02A4615BF00EA4A41 /* InspectorExampleApp.swift */; };
-		EE20EEB32A4615BF00EA4A41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEB22A4615BF00EA4A41 /* ContentView.swift */; };
+		EE20EEB32A4615BF00EA4A41 /* NavigationSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */; };
 		EE20EEB52A4615C000EA4A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE20EEB42A4615C000EA4A41 /* Assets.xcassets */; };
 		EE20EEB82A4615C000EA4A41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE20EEB72A4615C000EA4A41 /* Preview Assets.xcassets */; };
+		EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */; };
+		EE20EEC12A46167900EA4A41 /* AppleParkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */; };
+		EE20EEC32A46176D00EA4A41 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC22A46176D00EA4A41 /* Fruit.swift */; };
+		EE20EEC52A4617A800EA4A41 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC42A4617A800EA4A41 /* Animal.swift */; };
+		EE20EEC92A46187000EA4A41 /* AnimalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC82A46187000EA4A41 /* AnimalStore.swift */; };
+		EE20EECB2A46191900EA4A41 /* FruitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EECA2A46191900EA4A41 /* FruitList.swift */; };
+		EE20EECD2A461A3B00EA4A41 /* AnimalInspectorFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE20EEAD2A4615BF00EA4A41 /* InspectorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE20EEB02A4615BF00EA4A41 /* InspectorExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorExampleApp.swift; sourceTree = "<group>"; };
-		EE20EEB22A4615BF00EA4A41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitView.swift; sourceTree = "<group>"; };
 		EE20EEB42A4615C000EA4A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE20EEB72A4615C000EA4A41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNibbleBulletin.swift; sourceTree = "<group>"; };
+		EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleParkMap.swift; sourceTree = "<group>"; };
+		EE20EEC22A46176D00EA4A41 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		EE20EEC42A4617A800EA4A41 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		EE20EEC82A46187000EA4A41 /* AnimalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalStore.swift; sourceTree = "<group>"; };
+		EE20EECA2A46191900EA4A41 /* FruitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitList.swift; sourceTree = "<group>"; };
+		EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInspectorFrom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,14 @@
 			isa = PBXGroup;
 			children = (
 				EE20EEB02A4615BF00EA4A41 /* InspectorExampleApp.swift */,
-				EE20EEB22A4615BF00EA4A41 /* ContentView.swift */,
+				EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */,
+				EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */,
+				EE20EECA2A46191900EA4A41 /* FruitList.swift */,
+				EE20EEC82A46187000EA4A41 /* AnimalStore.swift */,
+				EE20EEC42A4617A800EA4A41 /* Animal.swift */,
+				EE20EEC22A46176D00EA4A41 /* Fruit.swift */,
+				EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */,
+				EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */,
 				EE20EEB42A4615C000EA4A41 /* Assets.xcassets */,
 				EE20EEB62A4615C000EA4A41 /* Preview Content */,
 			);
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE20EEB32A4615BF00EA4A41 /* ContentView.swift in Sources */,
+				EE20EEC32A46176D00EA4A41 /* Fruit.swift in Sources */,
+				EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletin.swift in Sources */,
+				EE20EEC92A46187000EA4A41 /* AnimalStore.swift in Sources */,
+				EE20EEB32A4615BF00EA4A41 /* NavigationSplitView.swift in Sources */,
 				EE20EEB12A4615BF00EA4A41 /* InspectorExampleApp.swift in Sources */,
+				EE20EEC12A46167900EA4A41 /* AppleParkMap.swift in Sources */,
+				EE20EEC52A4617A800EA4A41 /* Animal.swift in Sources */,
+				EE20EECB2A46191900EA4A41 /* FruitList.swift in Sources */,
+				EE20EECD2A461A3B00EA4A41 /* AnimalInspectorFrom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

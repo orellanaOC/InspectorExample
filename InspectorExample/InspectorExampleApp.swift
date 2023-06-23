@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+@available(iOS 17.0, *)
 @main
 struct InspectorExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationSplitView_Example()
+                .environmentObject(AnimalStore())
         }
     }
 }

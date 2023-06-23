@@ -1,5 +1,5 @@
 //
-//  FruitListView.swift
+//  FruitList.swift
 //  InspectorExample
 //
 //  Created by Concepcion Orellana on 6/23/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private struct FruitList: View {
+struct FruitList: View {
     @Binding var selectedFruits: [Fruit]
     var fruits: [Fruit]
 

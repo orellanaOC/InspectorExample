@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NavigationSplitView.swift
 //  InspectorExample
 //
 //  Created by Concepcion Orellana on 6/23/23.
@@ -23,35 +23,42 @@ struct NavigationSplitView_Example: View {
             Text("Currently selected \(selectedMenuIndex ?? 0)")
 
             AnimalTable(state: $state)
-            //            MARK: - Inside navigation structure
+//            MARK: - Inside navigation structure
+//                .inspector(isPresented: $state.inspectorPresented) {
+//                    AnimalInspectorForm(animal: $state.binding())
+//                        .presentationDetents([.height(200), .medium, .large])
+//                        .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
+//                }
+//            MARK: - Toolbar content outside inspector
+//                .toolbar {
+//                    Button {
+//                        state.inspectorPresented.toggle()
+//                    } label: {
+//                        Label("Toggle Inspector", systemImage: "info.circle")
+//                    }
+//                }
+        }
+//            MARK: - Outside navigation structure
                 .inspector(isPresented: $state.inspectorPresented) {
                     AnimalInspectorForm(animal: $state.binding())
+                        .toolbar {
+                            Button {
+                                state.inspectorPresented.toggle()
+                            } label: {
+                                Label("Toggle Inspector", systemImage: "info.circle")
+                            }
+                        }
                         .presentationDetents([.height(200), .medium, .large])
                         .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
+//            MARK: - Toolbar content inside inspector
+//                .toolbar {
+//                    Button {
+//                        state.inspectorPresented.toggle()
+//                    } label: {
+//                        Label("Toggle Inspector", systemImage: "info.circle")
+//                    }
+//                }
                 }
-            //            MARK: - Toolbar content outside inspector
-                .toolbar {
-                    Button {
-                        state.inspectorPresented.toggle()
-                    } label: {
-                        Label("Toggle Inspector", systemImage: "info.circle")
-                    }
-                }
-        }
-        //            MARK: - Outside navigation structure
-        //        .inspector(isPresented: $state.inspectorPresented) {
-        //            AnimalInspectorForm(animal: $state.binding())
-        //                .presentationDetents([.height(200), .medium, .large])
-        //                .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
-        //            MARK: - Toolbar content inside inspector
-        //                .toolbar {
-        //                    Button {
-        //                        state.inspectorPresented.toggle()
-        //                    } label: {
-        //                        Label("Toggle Inspector", systemImage: "info.circle")
-        //                    }
-        //                }
-        //        }
     }
 }
 struct MenuOption: Identifiable {
