@@ -41,6 +41,7 @@ struct NavigationSplitView_Example: View {
 //            MARK: - Outside navigation structure
                 .inspector(isPresented: $state.inspectorPresented) {
                     AnimalInspectorForm(animal: $state.binding())
+//            MARK: - Toolbar content inside inspector
                         .toolbar {
                             Button {
                                 state.inspectorPresented.toggle()
@@ -48,16 +49,6 @@ struct NavigationSplitView_Example: View {
                                 Label("Toggle Inspector", systemImage: "info.circle")
                             }
                         }
-                        .presentationDetents([.height(200), .medium, .large])
-                        .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
-//            MARK: - Toolbar content inside inspector
-//                .toolbar {
-//                    Button {
-//                        state.inspectorPresented.toggle()
-//                    } label: {
-//                        Label("Toggle Inspector", systemImage: "info.circle")
-//                    }
-//                }
                 }
     }
 }
