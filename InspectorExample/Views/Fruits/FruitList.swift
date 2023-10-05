@@ -26,7 +26,7 @@ struct FruitList: View {
                     }
                 })) {
                     HStack {
-                        FruitImage(fruit: fruit, size: .init(width: 40, height: 40), bordered: true)
+                        FruitImageView(fruit: fruit, size: .init(width: 40, height: 40), bordered: true)
                         Text(fruit.name).font(.body)
                     }
                 }

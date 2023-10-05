@@ -40,14 +40,6 @@ extension Animal {
     }
 }
 
-extension Binding where Value == AppState {
-    func binding() -> Binding<Animal>? {
-        self.projectedValue.animals.first {
-            $0.wrappedValue.id == self.selection.wrappedValue
-        }
-    }
-}
-
 var allAnimals: [Animal] = [
     .init(name: "Fabrizio", species: "Fish", pawSize: .small, favoriteFruits: [.arbutusUnedo, .bigBerry, .elstar], emoji: "🐟"),
     .init(name: "Soloman", species: "Snail", pawSize: .small, favoriteFruits: [.elstar, .flavorKing], emoji: "🐌"),

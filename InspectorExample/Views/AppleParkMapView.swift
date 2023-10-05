@@ -1,5 +1,5 @@
 //
-//  AppleParkMap.swift
+//  AppleParkMapView.swift
 //  InspectorExample
 //
 //  Created by Concepcion Orellana on 6/23/23.
@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 @available(iOS 17.0, *)
-struct AppleParkMap: View {
+struct AppleParkMapView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 37.334_371,
@@ -37,5 +37,5 @@ struct AppleParkMap: View {
 }
 
 #Preview {
-    AppleParkMap()
+    AppleParkMapView()
 }

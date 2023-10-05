@@ -1,5 +1,5 @@
 //
-//  FruitNibbleBulletin.swift
+//  FruitNibbleBulletinView.swift
 //  InspectorExample
 //
 //  Created by Concepcion Orellana on 6/23/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 17.0, *)
-struct FruitNibbleBulletin: View {
+struct FruitNibbleBulletinView: View {
     var fruit: Fruit = .pinkPearlApple
     @Environment(\.dismiss) private var dismiss
 
@@ -18,7 +18,7 @@ struct FruitNibbleBulletin: View {
                 VStack(alignment: .leading) {
                     Grid(horizontalSpacing: 12, verticalSpacing: 2) {
                         GridRow {
-                            FruitImage(fruit: fruit, size: .init(width: 60, height: 60), bordered: false)
+                            FruitImageView(fruit: fruit, size: .init(width: 60, height: 60), bordered: false)
 
                             Text("""
                             A \(fruit.name.lowercased()) was nibbled! The bite \
@@ -55,7 +55,7 @@ struct FruitNibbleBulletin: View {
                             Text("The pink pearls left behind").font(.caption)
                                 .frame(alignment: .leading)
                         }
-                        AppleParkMap()
+                        AppleParkMapView()
                             .mask(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
 
                     }
@@ -83,5 +83,5 @@ struct FruitNibbleBulletin: View {
 }
 
 #Preview {
-    FruitNibbleBulletin()
+    FruitNibbleBulletinView()
 }

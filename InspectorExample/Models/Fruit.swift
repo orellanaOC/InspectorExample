@@ -13,33 +13,6 @@ struct Fruit: Identifiable, Hashable {
     var id: String { name }
 }
 
-struct FruitImage: View {
-    var fruit: Fruit
-    var size: CGSize? = .init(width: 50, height: 50)
-    var scale: CGFloat = 1.0
-    var bordered = false
-
-    var body: some View {
-        fruit.color // Actual assets replaced with Color
-            .scaleEffect(scale)
-            .scaledToFill()
-            .frame(
-                width: size?.width,
-                height: size?.height
-            )
-            .mask { RoundedRectangle(cornerRadius: 4) }
-            .overlay {
-                if bordered {
-                    RoundedRectangle(cornerRadius: 4)
-                        .stroke(
-                            fruit.color,
-                            lineWidth: 2
-                        )
-                }
-            }
-    }
-}
-
 extension Fruit {
     static let goldenGem = Fruit(name: "Golden Gem Apple", color: .yellow)
     static let flavorKing = Fruit(name: "Flavor King Plum", color: .purple)
@@ -60,14 +33,6 @@ extension Fruit {
     static let kakiFuyu = Fruit(name: "Kaki Fuyu Persimmon", color: .orange)
     static let bigBerry = Fruit(name: "Big Berry Manzanita", color: .red)
     static let arbutusUnedo = Fruit(name: "Strawberry Tree", color: .red)
-}
-
-extension Array where Element == Fruit {
-    var groupID: Fruit.ID {
-        reduce("") { result, next in
-            result.appending(next.id)
-        }
-    }
 }
 
 var allFruits: [Fruit] = [

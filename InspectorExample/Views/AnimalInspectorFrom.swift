@@ -40,9 +40,9 @@ struct SelectedAnimalInspector: View {
         Section("Identity") {
             TextField("Name", text: $animal.name)
             Picker("Paw Size", selection: $animal.pawSize) {
-                Text("Small").tag(PawSize.small)
-                Text("Medium").tag(PawSize.medium)
-                Text("Large").tag(PawSize.large)
+                Text("Small").tag(Animal.PawSize.small)
+                Text("Medium").tag(Animal.PawSize.medium)
+                Text("Large").tag(Animal.PawSize.large)
             }
             FruitList(selectedFruits: $animal.favoriteFruits, fruits: allFruits)
         }
