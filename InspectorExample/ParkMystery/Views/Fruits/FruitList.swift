@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FruitList: View {
+    @State private var selectedFruit: Fruit?
     @Binding var selectedFruits: [Fruit]
     var fruits: [Fruit]
 
@@ -27,6 +28,15 @@ struct FruitList: View {
                 })) {
                     HStack {
                         FruitImageView(fruit: fruit, size: .init(width: 40, height: 40), bordered: true)
+                            .onTapGesture {
+                            selectedFruit = .flavorKing
+                        }
+                            .sheet(item: $selectedFruit) { fruit in
+                                FruitNibbleBulletinView(fruit: fruit)
+                                    .presentationBackground(.thinMaterial)
+                                    .presentationDetents([.height(200), .medium, .large])
+                                    .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
+                            }
                         Text(fruit.name).font(.body)
                     }
                 }

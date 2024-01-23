@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct Animal: Identifiable {
+    enum PawSize: Hashable {
+        case small
+        case medium
+        case large
+    }
+
+    var id: String { species }
     var name: String
     var species: String
     var pawSize: PawSize
     var favoriteFruits: [Fruit]
     var emoji: String
-
-    var id: String { species }
 }
 
 extension Animal {
@@ -41,20 +46,14 @@ extension Animal {
 }
 
 var allAnimals: [Animal] = [
-    .init(name: "Fabrizio", species: "Fish", pawSize: .small, favoriteFruits: [.arbutusUnedo, .bigBerry, .elstar], emoji: "🐟"),
+    .init(name: "Fabrizio", species: "Fish", pawSize: .small, favoriteFruits: [.arbutusUnedo, .elstar], emoji: "🐟"),
     .init(name: "Soloman", species: "Snail", pawSize: .small, favoriteFruits: [.elstar, .flavorKing], emoji: "🐌"),
     .init(name: "Ding", species: "Dove", pawSize: .small, favoriteFruits: [.quercusTomentella, .pinkPearlApple, .lapins], emoji: "🕊️"),
-    .init(name: "Catie", species: "Crow", pawSize: .small, favoriteFruits: [.pinkPearlApple, .goldenNectar, .hauerPippin], emoji: "🐦‍⬛"),
-    .init(name: "Miko", species: "Cat", pawSize: .small, favoriteFruits: [.belleDeBoskoop, .tompkinsKing, .lapins], emoji: "🐈"),
+    .init(name: "Catie", species: "Crow", pawSize: .small, favoriteFruits: [.pinkPearlApple, .arbutusUnedo, .kakiFuyu], emoji: "🐦‍⬛"),
+    .init(name: "Miko", species: "Cat", pawSize: .small, favoriteFruits: [.arbutusUnedo, .tompkinsKing, .lapins], emoji: "🐈"),
     .init(name: "Ricardo", species: "Rabbit", pawSize: .small, favoriteFruits: [.mariposa, .elephantHeart], emoji: "🐰"),
-    .init(name: "Cornelius", species: "Duck", pawSize: .medium, favoriteFruits: [.greenGage, .goldenNectar], emoji: "🦆"),
+    .init(name: "Cornelius", species: "Duck", pawSize: .medium, favoriteFruits: [.greenGage], emoji: "🦆"),
     .init(name: "Maria", species: "Mouse", pawSize: .small, favoriteFruits: [.arbutusUnedo, .elephantHeart], emoji: "🐹"),
-    .init(name: "Haku", species: "Hedgehog", pawSize: .small, favoriteFruits: [.christmasBerry, .creepingSnowberry, .goldenGem], emoji: "🦔"),
-    .init(name: "Rénard", species: "Raccoon", pawSize: .medium, favoriteFruits: [.belleDeBoskoop, .bigBerry, .christmasBerry, .kakiFuyu], emoji: "🦝")
+    .init(name: "Haku", species: "Hedgehog", pawSize: .small, favoriteFruits: [.greenGage, .elephantHeart, .goldenGem], emoji: "🦔"),
+    .init(name: "Rénard", species: "Raccoon", pawSize: .medium, favoriteFruits: [.kakiFuyu], emoji: "🦝")
 ]
-
-enum PawSize: Hashable {
-    case small
-    case medium
-    case large
-}

@@ -14,8 +14,7 @@ var scale: CGFloat = 1.0
 var bordered = false
 
 var body: some View {
-    Text(fruit.detail) // Actual assets replaced with Color
-//        .scaleEffect(scale)
+    Text(fruit.detail) // Actual assets replaced with detail and color
         .scaledToFill()
         .frame(
             width: size?.width,
@@ -32,5 +31,5 @@ var body: some View {
                     )
             }
         }
-}
+    }
 }

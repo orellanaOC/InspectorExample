@@ -12,7 +12,7 @@ import SwiftUI
 struct InspectorExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationSplitView_Example()
+            InspectorView()
                 .environmentObject(AnimalStore())
         }
     }

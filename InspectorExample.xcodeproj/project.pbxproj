@@ -11,13 +11,24 @@
 		EE20EEB32A4615BF00EA4A41 /* NavigationSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */; };
 		EE20EEB52A4615C000EA4A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE20EEB42A4615C000EA4A41 /* Assets.xcassets */; };
 		EE20EEB82A4615C000EA4A41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE20EEB72A4615C000EA4A41 /* Preview Assets.xcassets */; };
-		EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */; };
-		EE20EEC12A46167900EA4A41 /* AppleParkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */; };
+		EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletinView.swift */; };
+		EE20EEC12A46167900EA4A41 /* AppleParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC02A46167900EA4A41 /* AppleParkMapView.swift */; };
 		EE20EEC32A46176D00EA4A41 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC22A46176D00EA4A41 /* Fruit.swift */; };
 		EE20EEC52A4617A800EA4A41 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC42A4617A800EA4A41 /* Animal.swift */; };
 		EE20EEC92A46187000EA4A41 /* AnimalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EEC82A46187000EA4A41 /* AnimalStore.swift */; };
 		EE20EECB2A46191900EA4A41 /* FruitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EECA2A46191900EA4A41 /* FruitList.swift */; };
 		EE20EECD2A461A3B00EA4A41 /* AnimalInspectorFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */; };
+		EE63536F2B5F1C480018FB29 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6353692B5F1C480018FB29 /* DrawingEngine.swift */; };
+		EE6353712B5F1C480018FB29 /* CanvasExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63536B2B5F1C480018FB29 /* CanvasExampleView.swift */; };
+		EE6353722B5F1C480018FB29 /* DrawingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63536C2B5F1C480018FB29 /* DrawingShape.swift */; };
+		EE6353732B5F1C480018FB29 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63536D2B5F1C480018FB29 /* DrawingView.swift */; };
+		EE6353742B5F1C480018FB29 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63536E2B5F1C480018FB29 /* Line.swift */; };
+		EE6353772B5F373E0018FB29 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6353762B5F373E0018FB29 /* UIDevice+Extensions.swift */; };
+		EED777592ACA38A000D8585A /* Binding+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED777582ACA38A000D8585A /* Binding+Extensions.swift */; };
+		EED7775F2ACA39F600D8585A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7775E2ACA39F600D8585A /* Array+Extensions.swift */; };
+		EED777612ACA3A6500D8585A /* FruitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED777602ACA3A6500D8585A /* FruitImageView.swift */; };
+		EED777632ACA3B9400D8585A /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED777622ACA3B9400D8585A /* SideBarView.swift */; };
+		EED777672ACA41BD00D8585A /* AnimalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED777662ACA41BD00D8585A /* AnimalTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +37,24 @@
 		EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitView.swift; sourceTree = "<group>"; };
 		EE20EEB42A4615C000EA4A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE20EEB72A4615C000EA4A41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNibbleBulletin.swift; sourceTree = "<group>"; };
-		EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleParkMap.swift; sourceTree = "<group>"; };
+		EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNibbleBulletinView.swift; sourceTree = "<group>"; };
+		EE20EEC02A46167900EA4A41 /* AppleParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleParkMapView.swift; sourceTree = "<group>"; };
 		EE20EEC22A46176D00EA4A41 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		EE20EEC42A4617A800EA4A41 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		EE20EEC82A46187000EA4A41 /* AnimalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalStore.swift; sourceTree = "<group>"; };
 		EE20EECA2A46191900EA4A41 /* FruitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitList.swift; sourceTree = "<group>"; };
 		EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInspectorFrom.swift; sourceTree = "<group>"; };
+		EE6353692B5F1C480018FB29 /* DrawingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
+		EE63536B2B5F1C480018FB29 /* CanvasExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasExampleView.swift; sourceTree = "<group>"; };
+		EE63536C2B5F1C480018FB29 /* DrawingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingShape.swift; sourceTree = "<group>"; };
+		EE63536D2B5F1C480018FB29 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		EE63536E2B5F1C480018FB29 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		EE6353762B5F373E0018FB29 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		EED777582ACA38A000D8585A /* Binding+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extensions.swift"; sourceTree = "<group>"; };
+		EED7775E2ACA39F600D8585A /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		EED777602ACA3A6500D8585A /* FruitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitImageView.swift; sourceTree = "<group>"; };
+		EED777622ACA3B9400D8585A /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		EED777662ACA41BD00D8585A /* AnimalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +87,12 @@
 		EE20EEAF2A4615BF00EA4A41 /* InspectorExample */ = {
 			isa = PBXGroup;
 			children = (
+				EE6353752B5F372C0018FB29 /* Extensions */,
+				EE6353682B5F1BDB0018FB29 /* Drawing */,
+				EE6353672B5F1B9F0018FB29 /* ParkMystery */,
 				EE20EEB02A4615BF00EA4A41 /* InspectorExampleApp.swift */,
+				EED777622ACA3B9400D8585A /* SideBarView.swift */,
 				EE20EEB22A4615BF00EA4A41 /* NavigationSplitView.swift */,
-				EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */,
-				EE20EECA2A46191900EA4A41 /* FruitList.swift */,
-				EE20EEC82A46187000EA4A41 /* AnimalStore.swift */,
-				EE20EEC42A4617A800EA4A41 /* Animal.swift */,
-				EE20EEC22A46176D00EA4A41 /* Fruit.swift */,
-				EE20EEC02A46167900EA4A41 /* AppleParkMap.swift */,
-				EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletin.swift */,
 				EE20EEB42A4615C000EA4A41 /* Assets.xcassets */,
 				EE20EEB62A4615C000EA4A41 /* Preview Content */,
 			);
@@ -86,6 +105,92 @@
 				EE20EEB72A4615C000EA4A41 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE6353672B5F1B9F0018FB29 /* ParkMystery */ = {
+			isa = PBXGroup;
+			children = (
+				EED777682ACA424C00D8585A /* ViewModel */,
+				EED7775D2ACA39DB00D8585A /* Views */,
+				EED7775C2ACA38D600D8585A /* Extensions */,
+				EED7775A2ACA38BF00D8585A /* Models */,
+			);
+			path = ParkMystery;
+			sourceTree = "<group>";
+		};
+		EE6353682B5F1BDB0018FB29 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				EE63536B2B5F1C480018FB29 /* CanvasExampleView.swift */,
+				EE6353692B5F1C480018FB29 /* DrawingEngine.swift */,
+				EE63536C2B5F1C480018FB29 /* DrawingShape.swift */,
+				EE63536D2B5F1C480018FB29 /* DrawingView.swift */,
+				EE63536E2B5F1C480018FB29 /* Line.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		EE6353752B5F372C0018FB29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE6353762B5F373E0018FB29 /* UIDevice+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EED7775A2ACA38BF00D8585A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE20EEC42A4617A800EA4A41 /* Animal.swift */,
+				EE20EEC22A46176D00EA4A41 /* Fruit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EED7775C2ACA38D600D8585A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EED777582ACA38A000D8585A /* Binding+Extensions.swift */,
+				EED7775E2ACA39F600D8585A /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EED7775D2ACA39DB00D8585A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EED777652ACA41A900D8585A /* Animals */,
+				EED777642ACA41A200D8585A /* Fruits */,
+				EE20EEC02A46167900EA4A41 /* AppleParkMapView.swift */,
+				EE20EECC2A461A3B00EA4A41 /* AnimalInspectorFrom.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EED777642ACA41A200D8585A /* Fruits */ = {
+			isa = PBXGroup;
+			children = (
+				EED777602ACA3A6500D8585A /* FruitImageView.swift */,
+				EE20EEBE2A46164800EA4A41 /* FruitNibbleBulletinView.swift */,
+				EE20EECA2A46191900EA4A41 /* FruitList.swift */,
+			);
+			path = Fruits;
+			sourceTree = "<group>";
+		};
+		EED777652ACA41A900D8585A /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				EED777662ACA41BD00D8585A /* AnimalTableView.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		EED777682ACA424C00D8585A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE20EEC82A46187000EA4A41 /* AnimalStore.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,14 +264,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE20EEC32A46176D00EA4A41 /* Fruit.swift in Sources */,
-				EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletin.swift in Sources */,
+				EE20EEBF2A46164800EA4A41 /* FruitNibbleBulletinView.swift in Sources */,
 				EE20EEC92A46187000EA4A41 /* AnimalStore.swift in Sources */,
+				EED777612ACA3A6500D8585A /* FruitImageView.swift in Sources */,
+				EED7775F2ACA39F600D8585A /* Array+Extensions.swift in Sources */,
+				EE6353712B5F1C480018FB29 /* CanvasExampleView.swift in Sources */,
+				EE6353722B5F1C480018FB29 /* DrawingShape.swift in Sources */,
+				EE63536F2B5F1C480018FB29 /* DrawingEngine.swift in Sources */,
 				EE20EEB32A4615BF00EA4A41 /* NavigationSplitView.swift in Sources */,
+				EE6353742B5F1C480018FB29 /* Line.swift in Sources */,
+				EE6353732B5F1C480018FB29 /* DrawingView.swift in Sources */,
+				EED777632ACA3B9400D8585A /* SideBarView.swift in Sources */,
 				EE20EEB12A4615BF00EA4A41 /* InspectorExampleApp.swift in Sources */,
-				EE20EEC12A46167900EA4A41 /* AppleParkMap.swift in Sources */,
+				EE6353772B5F373E0018FB29 /* UIDevice+Extensions.swift in Sources */,
+				EED777592ACA38A000D8585A /* Binding+Extensions.swift in Sources */,
+				EE20EEC12A46167900EA4A41 /* AppleParkMapView.swift in Sources */,
 				EE20EEC52A4617A800EA4A41 /* Animal.swift in Sources */,
 				EE20EECB2A46191900EA4A41 /* FruitList.swift in Sources */,
 				EE20EECD2A461A3B00EA4A41 /* AnimalInspectorFrom.swift in Sources */,
+				EED777672ACA41BD00D8585A /* AnimalTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

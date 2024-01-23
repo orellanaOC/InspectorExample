@@ -49,10 +49,11 @@ struct FruitNibbleBulletinView: View {
                     }
                     HStack {
                         VStack {
-                            fruit.color
+                            FruitImageView(fruit: fruit, size: .init(width: 100, height: 100))
                                 .aspectRatio(contentMode: ContentMode.fit)
                                 .shadow(radius: 2.5)
-                            Text("The pink pearls left behind").font(.caption)
+                            Text("The pink pearls left behind")
+                                .font(.caption)
                                 .frame(alignment: .leading)
                         }
                         AppleParkMapView()

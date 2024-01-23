@@ -35,20 +35,27 @@ struct AnimalInspectorForm: View {
 struct SelectedAnimalInspector: View {
     @Binding var animal: Animal
     @ObservedObject var animalStore: AnimalStore
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         Section("Identity") {
             TextField("Name", text: $animal.name)
+
             Picker("Paw Size", selection: $animal.pawSize) {
                 Text("Small").tag(Animal.PawSize.small)
                 Text("Medium").tag(Animal.PawSize.medium)
                 Text("Large").tag(Animal.PawSize.large)
             }
+
             FruitList(selectedFruits: $animal.favoriteFruits, fruits: allFruits)
         }
 
         Section {
-            TextField(text: animalStore(\.alibi, for: animal), prompt: Text("What was \(animal.name) doing at the time of nibbling?"), axis: .vertical) {
+            TextField(
+                text: animalStore(\.alibi, for: animal),
+                prompt: Text("What was \(animal.name) doing at the time of nibbling?"), 
+                axis: .vertical
+            ) {
                 Text("Alibi")
             }
             .lineLimit(4, reservesSpace: true)
@@ -56,7 +63,11 @@ struct SelectedAnimalInspector: View {
                 SleepScheduleView(schedule: schedule)
             } else {
                 Button("Add Sleep Schedule") {
-                    animalStore.write(\.sleepSchedule, value: Animal.Storage.newSleepSchedule, for: animal)
+                    animalStore.write(
+                        \.sleepSchedule,
+                         value: Animal.Storage.newSleepSchedule,
+                         for: animal
+                    )
                 }
             }
             Slider(
