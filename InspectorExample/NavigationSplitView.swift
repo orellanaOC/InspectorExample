@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct InspectorView: View {
+    @StateObject var viewModel = SetGameViewModel()
+
     @State private var selectedMenuIndex: Int? = .zero
     @State private var state = AppState()
+
+    let defaultEmojiFontSize: CGFloat = 40
+    let testEmojis = "😀😷😁🥳👀🐶🍀🌈🌒😊🌲🌎🌞🔥🍎⚽️🚗🚓🚲🛩🚁🚀🛸🏠⌚️🎁🗝🔐❤️⛔️❌❓✅⚠️🎶➕➖🏳️"
 
     var title: some View {
         Text(SideBarView.menuOptions[selectedMenuIndex ?? .zero].topic)
@@ -29,6 +34,9 @@ struct InspectorView: View {
                 sideBar
             } detail: {
                 title
+                    .onTapGesture {
+                    state.inspectorPresented.toggle()
+                }
 
                 DrawingView(showInspector: $state.inspectorPresented)
             }
@@ -39,8 +47,10 @@ struct InspectorView: View {
             } detail: {
                 title
 
-                
-                EmojiArtDocumentView(document: EmojiArtDocument(), showInspector: $state.inspectorPresented)
+                SetGameView(
+                    viewModel: viewModel,
+                    showInspector: $state.inspectorPresented
+                )
             }
         case 2:
 //          MARK: - Outside navigation structure - Toolbar content inside inspector
@@ -48,11 +58,17 @@ struct InspectorView: View {
                 sideBar
             } detail: {
                 title
+                    .onTapGesture {
+                        state.inspectorPresented.toggle()
+                    }
 
-                AnimalTable(state: $state)
+                EmojiArtDocumentView(document: EmojiArtDocument())
             }
             .inspector(isPresented: $state.inspectorPresented) {
-                AnimalInspectorForm(animal: $state.binding())
+                ScrollingEmojisView(emojis: testEmojis)
+                    .font(
+                        .system(size: defaultEmojiFontSize)
+                    )
                     .presentationDetents([.height(200), .medium, .large])
                     .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
                     .toolbar {

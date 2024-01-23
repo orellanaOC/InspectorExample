@@ -30,7 +30,7 @@ struct DrawingView: View {
                         .stroke(line.color, style: StrokeStyle(lineWidth: line.lineWidth, lineCap: .round, lineJoin: .round))
                 }
             }
-            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged({ value in
+            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged { value in
                 let newPoint = value.location
                 if value.translation.width + value.translation.height == 0 {
                     //TODO: use selected color and linewidth
@@ -39,15 +39,13 @@ struct DrawingView: View {
                     let index = lines.count - 1
                     lines[index].points.append(newPoint)
                 }
-
-            }).onEnded({ value in
-                if let last = lines.last?.points, last.isEmpty {
-                    lines.removeLast()
+            }
+                .onEnded { value in
+                    if let last = lines.last?.points, last.isEmpty {
+                        lines.removeLast()
+                    }
                 }
-            })
-
             )
-
         }
         .inspector(isPresented: showInspector) {
             VStack {

@@ -16,11 +16,6 @@ struct EmojiArtDocumentView: View {
     @GestureState private var gestureZoomScale: CGFloat = 1
     @ObservedObject var document: EmojiArtDocument
 
-    let defaultEmojiFontSize: CGFloat = 40
-    let testEmojis = "😀😷😁🥳👀🐶🍀🌈🌒😊🌲🌎🌞🔥🍎⚽️🚗🚓🚲🛩🚁🚀🛸🏠⌚️🎁🗝🔐❤️⛔️❌❓✅⚠️🎶➕➖🏳️"
-
-    var showInspector: Binding<Bool>
-
     private var panOffset: CGSize {
         (steadyStatePanOffset + gesturePanOffset) * zoomScale
     }
@@ -28,21 +23,11 @@ struct EmojiArtDocumentView: View {
         steadyStateZoomScale * gestureZoomScale
     }
 
+    let defaultEmojiFontSize: CGFloat = 40
+
     var body: some View {
         VStack(spacing: .zero) {
             documentBody
-        }
-        .inspector(isPresented: showInspector) {
-            palette
-                .padding(.top)
-        }
-//        MARK: - Inside navigation structure - Toolbar content outside inspector
-        .toolbar {
-            Button {
-                showInspector.wrappedValue.toggle()
-            } label: {
-                Label("Toggle Inspector", systemImage: "info.circle")
-            }
         }
     }
 
@@ -160,13 +145,6 @@ struct EmojiArtDocumentView: View {
                 }
             }
         }
-    }
-
-    var palette: some View {
-        ScrollingEmojisView(emojis: testEmojis)
-            .font(
-                .system(size: defaultEmojiFontSize)
-            )
     }
 
     // MARK: - Drag and Drop
@@ -327,9 +305,6 @@ struct EmojiArtDocumentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiArtDocumentView(
-            document: EmojiArtDocument(),
-            showInspector: .constant(true)
-        )
+        EmojiArtDocumentView(document: EmojiArtDocument())
     }
 }
