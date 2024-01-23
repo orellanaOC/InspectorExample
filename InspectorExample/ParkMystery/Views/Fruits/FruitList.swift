@@ -31,12 +31,12 @@ struct FruitList: View {
                             .onTapGesture {
                             selectedFruit = .flavorKing
                         }
-                            .sheet(item: $selectedFruit) { fruit in
-                                FruitNibbleBulletinView(fruit: fruit)
-                                    .presentationBackground(.thinMaterial)
-                                    .presentationDetents([.height(200), .medium, .large])
-                                    .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
-                            }
+//                            .sheet(item: $selectedFruit) { fruit in
+//                                FruitNibbleBulletinView(fruit: fruit)
+//                                    .presentationBackground(.thinMaterial)
+//                                    .presentationDetents([.height(200), .medium, .large])
+//                                    .presentationBackgroundInteraction(.enabled(upThrough: .height(200)))
+//                            }
                         Text(fruit.name).font(.body)
                     }
                 }

@@ -37,7 +37,7 @@ struct AnimalTable: View {
             }
             TableColumn("Favorite Fruits") { animal in
                 HStack {
-                    ForEach(animal.favoriteFruits.prefix(3)) { fruit in
+                    ForEach(animal.favoriteFruits.prefix(4)) { fruit in
                         FruitImageView(fruit: fruit, size: .init(width: fruitWidth, height: fruitWidth), scale: 2.0, bordered: state.selection == animal.id)
                     }
                 }

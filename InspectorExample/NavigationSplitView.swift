@@ -30,10 +30,7 @@ struct InspectorView: View {
             } detail: {
                 title
 
-                DrawingView(
-                    isInsideOfTheInspector: true,
-                    showInspector: $state.inspectorPresented
-                )
+                DrawingView(showInspector: $state.inspectorPresented)
             }
         case 1:
 //          MARK: - Inside navigation structure - Toolbar content outside inspector
@@ -42,10 +39,8 @@ struct InspectorView: View {
             } detail: {
                 title
 
-                DrawingView(
-                    isInsideOfTheInspector: false,
-                    showInspector: $state.inspectorPresented
-                )
+                
+                EmojiArtDocumentView(document: EmojiArtDocument(), showInspector: $state.inspectorPresented)
             }
         case 2:
 //          MARK: - Outside navigation structure - Toolbar content inside inspector

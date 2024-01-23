@@ -16,17 +16,15 @@ struct DrawingView: View {
     @State private var selectedLineWidth: CGFloat = 1
     @State private var showConfirmation: Bool = false
 
-    let engine = DrawingEngine()
-    let isInsideOfTheInspector: Bool
+    let defaultEmojiFontSize: CGFloat = 40
 
     var showInspector: Binding<Bool>
 
     var body: some View {
         VStack {
             ZStack {
-
                 Color.white
-                
+
                 ForEach(lines){ line in
                     DrawingShape(points: line.points)
                         .stroke(line.color, style: StrokeStyle(lineWidth: line.lineWidth, lineCap: .round, lineJoin: .round))
@@ -111,19 +109,6 @@ struct DrawingView: View {
 
 //    MARK: - Inside navigation structure - Toolbar content inside inspector
             .toolbar {
-                if isInsideOfTheInspector {
-                    Button {
-                        showInspector.wrappedValue.toggle()
-                    } label: {
-                        Label("Toggle Inspector", systemImage: "info.circle")
-                    }
-                }
-            }
-        }
-
-//    MARK: - Inside navigation structure - Toolbar content outside inspector
-        .toolbar {
-            if !isInsideOfTheInspector || horizontalSizeClass == .compact {
                 Button {
                     showInspector.wrappedValue.toggle()
                 } label: {
@@ -136,9 +121,6 @@ struct DrawingView: View {
 
 struct DrawingView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawingView(
-            isInsideOfTheInspector: true,
-            showInspector: .constant(true)
-        )
+        DrawingView(showInspector: .constant(true))
     }
 }
