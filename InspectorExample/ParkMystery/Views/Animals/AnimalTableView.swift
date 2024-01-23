@@ -30,9 +30,6 @@ struct AnimalTable: View {
                         .padding(2)
                         .background(.thickMaterial, in: RoundedRectangle(cornerRadius: 3))
                     Text(animal.name + " " + animal.species).font(.title3)
-                        .onTapGesture {
-                            state.inspectorPresented.toggle()
-                        }
                 }
             }
             TableColumn("Favorite Fruits") { animal in

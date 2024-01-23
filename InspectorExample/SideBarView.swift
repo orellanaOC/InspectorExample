@@ -20,10 +20,10 @@ struct SideBarView: View {
     @Binding var selectedMenuIndex: Int?
 
     static let menuOptions: [MenuOption] = [
-        .init(menuIndex: 0, menuTitle: "InsideNavigationInsideInspector", topic: "Inside Navigation Inside Inspector"),
-        .init(menuIndex: 1, menuTitle: "InsideNavigationOutsideInspector", topic: "Inside Navigation Outside Inspector"),
-        .init(menuIndex: 2, menuTitle: "OutsideNavigationInsideInspector", topic: "Outside Navigation Inside Inspector"),
-        .init(menuIndex: 3, menuTitle: "OutsideNavigationOutsideInspector", topic: "Outside Navigation Outside Inspector")
+        .init(menuIndex: 0, menuTitle: "Drawing Art", topic: "Inside Navigation Inside Inspector"),
+        .init(menuIndex: 1, menuTitle: "Set Game", topic: "Inside Navigation Outside Inspector"),
+        .init(menuIndex: 2, menuTitle: "Emoji Art", topic: "Outside Navigation Inside Inspector"),
+        .init(menuIndex: 3, menuTitle: "Animal Park", topic: "Outside Navigation Outside Inspector")
     ]
 
     var body: some View {
